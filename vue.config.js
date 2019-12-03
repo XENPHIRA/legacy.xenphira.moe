@@ -34,6 +34,12 @@ module.exports = {
       template: 'public/index.html',
       title: 'COMMISSION WAITLIST TIMELINE',
       chunks: [ 'chunk-vendors', 'chunk-common', 'timeline' ]
+    },
+    '404': {
+      entry: './src/pages/404/main.js',
+      template: 'public/index.html',
+      title: '404 OOPS',
+      chunks: [ 'chunk-vendors', 'chunk-common', '404' ]
     }
   }
 }
