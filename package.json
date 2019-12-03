@@ -4,8 +4,11 @@
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "build": "vue-cli-service build && echo 'xenphira.moe' > ./docs/CNAME",
+    "lint": "vue-cli-service lint",
+    "deploy": "git add . && git commit -S -m 'BUILD $(date)' && git push", 
+    "build-and-deploy": "vue-cli-service build && echo 'xenphira.moe' > ./docs/CNAME && git add . && git commit -S -m 'BUILD $(date)' && git push",
+    "clean": "rm -rf docs/"
   },
   "dependencies": {
     "core-js": "^3.4.3",
