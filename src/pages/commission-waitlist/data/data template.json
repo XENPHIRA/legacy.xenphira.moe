@@ -1,0 +1,27 @@
+[
+    {
+        "commission_id":"",
+        "commission_name":"",
+        "commission_cost_USD":0.0,
+        "sfw":true,
+        "detail_artist":[
+            {
+                "artist_name":"",
+                "artist_url":""
+            }
+        ],
+        "detail_date_of_commission":"",
+        "detail_date_of_completed_payment":"",
+        "latest_status":"",
+        "latest_status_link":"",
+        "updates":[
+            {
+                "timestamp":"",
+                "status":"",
+                "link":""
+            }
+        ],
+        "state_complete":false,
+        "state_css":"notstarted"
+    }
+]

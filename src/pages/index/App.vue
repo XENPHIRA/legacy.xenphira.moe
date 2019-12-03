@@ -1,60 +1,88 @@
 <template>
-  <v-app>
-    <v-app-bar
-      app
-      color="primary"
-      dark
+  <v-app id="inspire">
+    <v-navigation-drawer
+        v-model="drawer"
+        app
+        clipped
     >
-      <div class="d-flex align-center">
-        <v-img
-          alt="Vuetify Logo"
-          class="shrink mr-2"
-          contain
-          src="https://cdn.vuetifyjs.com/images/logos/vuetify-logo-dark.png"
-          transition="scale-transition"
-          width="40"
-        />
-
-        <v-img
-          alt="Vuetify Name"
-          class="shrink mt-1 hidden-sm-and-down"
-          contain
-          min-width="100"
-          src="https://cdn.vuetifyjs.com/images/logos/vuetify-name-dark.png"
-          width="100"
-        />
-      </div>
-
-      <v-spacer></v-spacer>
-
-      <v-btn
-        href="https://github.com/vuetifyjs/vuetify/releases/latest"
-        target="_blank"
-        text
-      >
-        <span class="mr-2">Latest Release</span>
-        <v-icon>mdi-open-in-new</v-icon>
-      </v-btn>
+        <v-list dense>
+            <v-list-item class="v-list-item--active" link href="/">
+                <v-list-item-action>
+                <v-icon>mdi-home</v-icon>
+                </v-list-item-action>
+                <v-list-item-content>
+                <v-list-item-title>HOME</v-list-item-title>
+                </v-list-item-content>
+            </v-list-item>
+            <v-list-item link href="/social">
+                <v-list-item-action>
+                <v-icon>mdi-internet-explorer</v-icon>
+                </v-list-item-action>
+                <v-list-item-content>
+                <v-list-item-title>SOCIAL</v-list-item-title>
+                </v-list-item-content>
+            </v-list-item>
+            <v-list-item link href="/ref">
+                <v-list-item-action>
+                <v-icon>mdi-image-album</v-icon>
+                </v-list-item-action>
+                <v-list-item-content>
+                <v-list-item-title>REFERENCES</v-list-item-title>
+                </v-list-item-content>
+            </v-list-item>
+            <v-list-item link href="/waitlist">
+                <v-list-item-action>
+                <v-icon>mdi-timelapse</v-icon>
+                </v-list-item-action>
+                <v-list-item-content>
+                <v-list-item-title>COMMISSION WAITLIST</v-list-item-title>
+                </v-list-item-content>
+            </v-list-item>
+        </v-list>
+    </v-navigation-drawer>
+    <v-app-bar
+        app
+        clipped-left
+    >
+        <v-app-bar-nav-icon @click.stop="drawer = !drawer" />
+        <v-toolbar-title>XENPHIRA</v-toolbar-title>
     </v-app-bar>
 
     <v-content>
-      <HelloWorld/>
+      <v-container
+        class="fill-height"
+        fluid
+      >
+        <v-row
+          align="center"
+          justify="center"
+        >
+          <v-col class="shrink">
+            <h1 style="font-size:4em;">I AM XENPHIRA</h1>
+          </v-col>
+        </v-row>
+      </v-container>
     </v-content>
+
+    <v-footer app>
+      <span>&copy; XENPHIRA {{ new Date().getFullYear() }}</span>
+    </v-footer>
   </v-app>
 </template>
 
 <script>
-import HelloWorld from '../../components/HelloWorld';
 
-export default {
-  name: 'App',
+  export default {
+    components: {
+      
+    },
 
-  components: {
-    HelloWorld,
-  },
+    data: () => ({
+      drawer: null,
+    }),
 
-  data: () => ({
-    //
-  }),
-};
+    created () {
+      this.$vuetify.theme.dark = true
+    },
+  }
 </script>
