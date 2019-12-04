@@ -60,72 +60,47 @@
         </v-row>
         <v-row>
           <v-col>
-            <div class="commgroup">
-              <table class="commtable">
-                <thead>
-                  <tr>
-                    <th class="commdata">Commission</th>
-                    <th class="commdata">Artist(s)</th>
-                    <th class="commdata">Date of Commission</th>
-                    <th class="commdata">Date of Payment</th>
-                    <th class="commdata">Status</th>
-                    <th class="commdata">Time Since Start of Commission</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr
-                    v-for="commission of commissions"
-                    v-bind:key="commission.commission_id"
-                    v-bind:id="commission.commission_id"
-                    class="comm"
-                  >
-                    <td class="commdata">
-                      <a
-                        :href="'/timeline?' + commission.commission_id"
-                        v-tooltip="'Click to view timeline'"
-                        >{{ commission.commission_name }}</a
-                      >
-                    </td>
-                    <td class="commdata">
-                      <a
-                        v-for="artist in commission.detail_artist"
-                        v-bind:href="artist.artist_url"
-                        v-bind:key="artist"
-                        >{{ artist.artist_name }}<br
-                      /></a>
-                    </td>
-                    <td class="commdata">
-                      {{
-                        (commission.detail_date_of_commission / 1)
-                          | moment("dddd, MMMM Do YYYY, h:mm:ss a")
-                      }}
-                    </td>
-                    <td
-                      class="commdata"
-                      v-tooltip="
-                        'Value of commission in USD: $' + commission.commission_cost_USD
-                      "
-                    >
-                      {{
-                        (commission.detail_date_of_completed_payment / 1)
-                          | moment("dddd, MMMM Do YYYY, h:mm:ss a")
-                      }}
-                    </td>
-                    <td class="commdata">
-                      <a
-                        v-bind:href="commission.latest_status_link"
-                        target="_blank"
-                        v-bind:class="commission.state_css"
-                        >{{ commission.latest_status }}</a
-                      >
-                    </td>
-                    <td class="commdata">
-                      {{ commission | timecalc }}
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
+            <v-data-table
+              dense
+              :headers="headers"
+              :items="commissions"
+              :items-per-page="5"
+              class="elevation-1"
+            >
+              <template v-slot:item.commission_name="{ item }">
+                <a :href="'/timeline?' + item.commission_id"
+                  v-tooltip="'Click to view timeline'">{{ item.commission_name }}</a>
+              </template>
+              <template v-slot:item.detail_artist="{ item }">
+                <a
+                  v-for="artist in item.detail_artist"
+                  v-bind:href="artist.artist_url"
+                  v-bind:key="artist"
+                  >{{ artist.artist_name }}<br
+                /></a>
+              </template>
+              <template v-slot:item.detail_date_of_commission="{ item }">
+                {{ (item.detail_date_of_commission / 1)
+                          | moment("dddd, MMMM Do YYYY, h:mm:ss a") }}
+              </template>
+              <template v-slot:item.detail_date_of_completed_payment="{ item }">
+                <span v-tooltip="
+                        'Value of commission in USD: $' + item.commission_cost_USD
+                      ">{{ (item.detail_date_of_completed_payment / 1)
+                          | moment("dddd, MMMM Do YYYY, h:mm:ss a") }}</span>
+              </template>
+              <template v-slot:item.latest_status="{ item }">
+                <a
+                  v-bind:href="item.latest_status_link"
+                  target="_blank"
+                  v-bind:class="item.state_css"
+                  >{{ item.latest_status }}</a
+                >
+              </template>
+              <template v-slot:item.commissiontime="{ item }">
+                {{ item | timecalc }}
+              </template>
+            </v-data-table>
           </v-col>
         </v-row>
       </v-container>
@@ -179,6 +154,44 @@
         time: now,
         currentOptions: currentOptionsDisplayText,
         drawer: null,
+        headers: [
+          {
+            text: "Commission",
+            align: "left",
+            sortable: false,
+            value: "commission_name"
+          },
+          {
+            text: "Artist(s)",
+            align: "left",
+            sortable: true,
+            value: "detail_artist"
+          },
+          {
+            text: "Date of Commission",
+            align: "left",
+            sortable: true,
+            value: "detail_date_of_commission"
+          },
+          {
+            text: "Date of Payment",
+            align: "left",
+            sortable: true,
+            value: "detail_date_of_completed_payment"
+          },
+          {
+            text: "Status",
+            align: "left",
+            sortable: false,
+            value: "latest_status"
+          },
+          {
+            text: "Time Since Start of Commission",
+            align: "left",
+            sortable: true,
+            value: "commissiontime"
+          }
+        ]
       };
     },
     computed: {
