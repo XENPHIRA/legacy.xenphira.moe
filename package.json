@@ -6,8 +6,8 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build && echo 'xenphira.moe' > ./docs/CNAME",
     "lint": "vue-cli-service lint",
-    "deploy": "git add . && git commit -S -m 'BUILD $(date)' && git push", 
-    "build-and-deploy": "vue-cli-service build && echo 'xenphira.moe' > ./docs/CNAME && git add . && git commit -S -m 'BUILD $(date)' && git push",
+    "deploy": "git add . && git commit -S -m 'BUILD ${date}' && git push", 
+    "build-and-deploy": "vue-cli-service build && echo 'xenphira.moe' > ./docs/CNAME && git add . && git commit -S -m 'BUILD ${date}' && git push",
     "clean": "rm -rf docs/"
   },
   "dependencies": {
