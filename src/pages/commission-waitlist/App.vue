@@ -61,7 +61,6 @@
         <v-row>
           <v-col>
             <v-data-table
-              dense
               :headers="headers"
               :items="commissions"
               :items-per-page="5"
