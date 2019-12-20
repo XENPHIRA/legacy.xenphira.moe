@@ -187,7 +187,7 @@
           {
             text: "Time Since Start of Commission",
             align: "left",
-            sortable: true,
+            sortable: false,
             value: "commissiontime"
           }
         ]
