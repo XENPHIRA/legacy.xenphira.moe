@@ -48,6 +48,9 @@ def main():
         path_to_sfw_art = None
         path_to_nsfw_art = None
 
+        path_to_thumb = None
+        enabled = False
+
         art_types = []
 
         sfw_art = None
@@ -63,8 +66,12 @@ def main():
             "dislikes": [],
             "personality_traits": [],
             "adopted": False,
-            "original_owner": "XENPHIRA"
+            "original_owner": "XENPHIRA",
         }
+
+        if os.path.exists(char_path + "thumb.png"):
+            path_to_thumb = char_path + "thumb.png"
+            enabled = True
 
         if os.path.exists(char_path + "ref/sfw/ref.png"):
             path_to_sfw_ref = char_path + "ref/sfw/ref.png"
@@ -80,7 +87,7 @@ def main():
                 "artist_platform": ref_artist_platform,
                 "character": c,
                 "effective_artist_link": effective_ref_artist_link,
-                "path_to_art": path_to_sfw_ref,
+                "path_to_art": path_to_sfw_ref.replace("../../", "@/"),
                 "rating": "SFW",
                 "isref": True
             })
@@ -99,7 +106,7 @@ def main():
                 "artist_platform": ref_artist_platform,
                 "character": c,
                 "effective_artist_link": effective_ref_artist_link,
-                "path_to_art": path_to_sfw_ref,
+                "path_to_art": path_to_nsfw_ref.replace("../../", "@/"),
                 "rating": "NSFW",
                 "isref": True
             })
@@ -140,7 +147,7 @@ def main():
                             "artist_platform": artist_platform,
                             "character": c,
                             "effective_artist_link": effective_artist_link,
-                            "path_to_art": artist_work_dir + piece,
+                            "path_to_art": (artist_work_dir + piece).replace("../../", "@/"),
                             "rating": "SFW",
                             "isref": False
                         })
@@ -166,7 +173,7 @@ def main():
                             "artist_platform": artist_platform,
                             "character": c,
                             "effective_artist_link": effective_artist_link,
-                            "path_to_art": artist_work_dir + piece,
+                            "path_to_art": (artist_work_dir + piece).replace("../../", "@/"),
                             "rating": "NSFW"
                         })
                     #print(artist + " -- " + piece)
@@ -175,8 +182,10 @@ def main():
         data["characters"].append(
             {
                 "character": c,
-                "path_to_sfw_ref": path_to_sfw_ref,
-                "path_to_nsfw_ref": path_to_nsfw_ref,
+                "enabled": enabled,
+                "path_to_thumb": str(path_to_thumb).replace("../../", "@/"),
+                "path_to_sfw_ref": str(path_to_sfw_ref).replace("../../", "@/"),
+                "path_to_nsfw_ref": str(path_to_nsfw_ref).replace("../../", "@/"),
                 "path_to_sfw_art": path_to_sfw_art,
                 "path_to_nsfw_art": path_to_nsfw_art,
                 "character_data": character_data,

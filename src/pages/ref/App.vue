@@ -57,8 +57,11 @@
           align="center"
           justify="center"
         >
-          <v-col class="shrink">
-            <h1>CONTENT MIGRATION HAPPENING SOON. FOR NOW, CHECK OUT <a href="https://ref.basicallyodd.net" target="_blank">THE OLD SITE</a></h1>
+          <v-col
+           v-for="character in char"
+           v-bind:key="character"
+           >
+            <img width="250 em" :src="getImgUrl(character)" :alt="character['character']" />
           </v-col>
         </v-row>
       </v-container>
@@ -72,13 +75,31 @@
 
 <script>
 
+  import chardata from "./data.json";
+
+  var enabled_chars = [];
+
+  var i = 0;
+  for (i=0; i<chardata["characters"].length; i++) {
+    if (chardata["characters"][i]["enabled"] == true) {
+      enabled_chars.push(chardata["characters"][i]);
+    }
+  }
+
   export default {
     components: {
       
     },
 
+    methods: {
+      getImgUrl: function(c){
+        return require('../../assets/ref/characters/'+c["character"]+'/thumb.png');
+      }
+    },
+
     data: () => ({
       drawer: null,
+      char: enabled_chars
     }),
 
     created () {

@@ -1,0 +1,591 @@
+{
+	"XENPHIRA_CHARACTER_CATALOG_VERSION": "1.0.0",
+	"characters": [
+		{
+			"art_types": [
+
+			],
+			"character_data": {
+				"dislikes": [
+
+				],
+				"colors": [
+
+				],
+				"age": "",
+				"original_owner": "XENPHIRA",
+				"adopted": false,
+				"name": "",
+				"description": "",
+				"likes": [
+
+				],
+				"pronouns": "",
+				"personality_traits": [
+
+				]
+			},
+			"character": "Astra",
+			"enabled": false,
+			"path_to_thumb": "None",
+			"path_to_sfw_ref": "None",
+			"path_to_nsfw_ref": "None",
+			"path_to_nsfw_art": null,
+			"nsfw_art": null,
+			"sfw_art": null,
+			"path_to_sfw_art": null
+		},
+		{
+			"art_types": [
+
+			],
+			"character_data": {
+				"dislikes": [
+
+				],
+				"colors": [
+
+				],
+				"age": "",
+				"original_owner": "XENPHIRA",
+				"adopted": false,
+				"name": "",
+				"description": "",
+				"likes": [
+
+				],
+				"pronouns": "",
+				"personality_traits": [
+
+				]
+			},
+			"character": "Bun Pat",
+			"enabled": false,
+			"path_to_thumb": "None",
+			"path_to_sfw_ref": "None",
+			"path_to_nsfw_ref": "None",
+			"path_to_nsfw_art": null,
+			"nsfw_art": null,
+			"sfw_art": null,
+			"path_to_sfw_art": null
+		},
+		{
+			"art_types": [
+
+			],
+			"character_data": {
+				"dislikes": [
+
+				],
+				"colors": [
+
+				],
+				"age": "",
+				"original_owner": "XENPHIRA",
+				"adopted": false,
+				"name": "",
+				"description": "",
+				"likes": [
+
+				],
+				"pronouns": "",
+				"personality_traits": [
+
+				]
+			},
+			"character": "Cocoa",
+			"enabled": false,
+			"path_to_thumb": "None",
+			"path_to_sfw_ref": "None",
+			"path_to_nsfw_ref": "None",
+			"path_to_nsfw_art": null,
+			"nsfw_art": null,
+			"sfw_art": null,
+			"path_to_sfw_art": null
+		},
+		{
+			"art_types": [
+
+			],
+			"character_data": {
+				"dislikes": [
+
+				],
+				"colors": [
+
+				],
+				"age": "",
+				"original_owner": "XENPHIRA",
+				"adopted": false,
+				"name": "",
+				"description": "",
+				"likes": [
+
+				],
+				"pronouns": "",
+				"personality_traits": [
+
+				]
+			},
+			"character": "Kae",
+			"enabled": false,
+			"path_to_thumb": "None",
+			"path_to_sfw_ref": "None",
+			"path_to_nsfw_ref": "None",
+			"path_to_nsfw_art": null,
+			"nsfw_art": null,
+			"sfw_art": null,
+			"path_to_sfw_art": null
+		},
+		{
+			"art_types": [
+
+			],
+			"character_data": {
+				"dislikes": [
+
+				],
+				"colors": [
+
+				],
+				"age": "",
+				"original_owner": "XENPHIRA",
+				"adopted": false,
+				"name": "",
+				"description": "",
+				"likes": [
+
+				],
+				"pronouns": "",
+				"personality_traits": [
+
+				]
+			},
+			"character": "L\u00e9o",
+			"enabled": false,
+			"path_to_thumb": "None",
+			"path_to_sfw_ref": "None",
+			"path_to_nsfw_ref": "None",
+			"path_to_nsfw_art": null,
+			"nsfw_art": null,
+			"sfw_art": null,
+			"path_to_sfw_art": null
+		},
+		{
+			"art_types": [
+
+			],
+			"character_data": {
+				"dislikes": [
+
+				],
+				"colors": [
+
+				],
+				"age": "",
+				"original_owner": "XENPHIRA",
+				"adopted": false,
+				"name": "",
+				"description": "",
+				"likes": [
+
+				],
+				"pronouns": "",
+				"personality_traits": [
+
+				]
+			},
+			"character": "Seth",
+			"enabled": false,
+			"path_to_thumb": "None",
+			"path_to_sfw_ref": "None",
+			"path_to_nsfw_ref": "None",
+			"path_to_nsfw_art": null,
+			"nsfw_art": null,
+			"sfw_art": null,
+			"path_to_sfw_art": null
+		},
+		{
+			"art_types": [
+				"SFW",
+				"NSFW"
+			],
+			"character_data": {
+				"dislikes": [
+
+				],
+				"colors": [
+					"fixme",
+					"hex",
+					"here"
+				],
+				"age": "23",
+				"original_owner": "XENPHIRA",
+				"adopted": false,
+				"name": "Xenphira Hollyvine",
+				"description": "A pink husky who likes to party!",
+				"likes": [
+
+				],
+				"pronouns": "She/Her/Hers",
+				"personality_traits": [
+
+				]
+			},
+			"character": "Xen",
+			"enabled": true,
+			"path_to_thumb": "@/assets/ref/characters/Xen/thumb.png",
+			"path_to_sfw_ref": "@/assets/ref/characters/Xen/ref/sfw/ref.png",
+			"path_to_nsfw_ref": "None",
+			"path_to_nsfw_art": "../../assets/ref/characters/Xen/art/nsfw/",
+			"nsfw_art": [
+				{
+					"character": "Xen",
+					"effective_artist_link": "https://furaffinity.net/user/ulitochka",
+					"rating": "NSFW",
+					"artist": "ulitochka",
+					"artist_platform": "FA",
+					"path_to_art": "@/assets/ref/characters/Xen/art/nsfw/ulitochka [FA]/xen_0_\u043b\u0430\u043f\u043a\u04381122\u041e\u0414\u0415\u0416\u0414\u0410.png"
+				},
+				{
+					"character": "Xen",
+					"effective_artist_link": "https://furaffinity.net/user/ulitochka",
+					"rating": "NSFW",
+					"artist": "ulitochka",
+					"artist_platform": "FA",
+					"path_to_art": "@/assets/ref/characters/Xen/art/nsfw/ulitochka [FA]/xen_1_\u043b\u0430\u043f\u043a\u04381122\u0433\u043e\u0442\u043e\u0432\u043e.png"
+				},
+				{
+					"character": "Xen",
+					"effective_artist_link": "https://furaffinity.net/user/ulitochka",
+					"rating": "NSFW",
+					"artist": "ulitochka",
+					"artist_platform": "FA",
+					"path_to_art": "@/assets/ref/characters/Xen/art/nsfw/ulitochka [FA]/xen_2_\u043b\u0430\u043f\u043a\u04381122\u0411\u0418\u0411\u0410.png"
+				},
+				{
+					"character": "Xen",
+					"effective_artist_link": "https://furaffinity.net/user/irishthorns",
+					"rating": "NSFW",
+					"artist": "irishthorns",
+					"artist_platform": "FA",
+					"path_to_art": "@/assets/ref/characters/Xen/art/nsfw/irishthorns [FA]/Xen and Leo.png"
+				},
+				{
+					"character": "Xen",
+					"effective_artist_link": "https://furaffinity.net/user/melianah",
+					"rating": "NSFW",
+					"artist": "melianah",
+					"artist_platform": "FA",
+					"path_to_art": "@/assets/ref/characters/Xen/art/nsfw/melianah [FA]/group_sex_2019_by_melianah.png"
+				},
+				{
+					"character": "Xen",
+					"effective_artist_link": "https://furaffinity.net/user/cydergerra",
+					"rating": "NSFW",
+					"artist": "cydergerra",
+					"artist_platform": "FA",
+					"path_to_art": "@/assets/ref/characters/Xen/art/nsfw/cydergerra [FA]/WIP_BAssXI18smw.jpg"
+				},
+				{
+					"character": "Xen",
+					"effective_artist_link": "https://furaffinity.net/user/XNIROX",
+					"rating": "NSFW",
+					"artist": "XNIROX",
+					"artist_platform": "FA",
+					"path_to_art": "@/assets/ref/characters/Xen/art/nsfw/XNIROX [FA]/Maych.png"
+				},
+				{
+					"character": "Xen",
+					"effective_artist_link": "https://furaffinity.net/user/Artararam",
+					"rating": "NSFW",
+					"artist": "Artararam",
+					"artist_platform": "FA",
+					"path_to_art": "@/assets/ref/characters/Xen/art/nsfw/Artararam [FA]/zUsU2e71NGQ.jpg"
+				},
+				{
+					"character": "Xen",
+					"effective_artist_link": "https://furaffinity.net/user/Artararam",
+					"rating": "NSFW",
+					"artist": "Artararam",
+					"artist_platform": "FA",
+					"path_to_art": "@/assets/ref/characters/Xen/art/nsfw/Artararam [FA]/O8VzF0FQ4Pk.jpg"
+				},
+				{
+					"character": "Xen",
+					"effective_artist_link": "https://furaffinity.net/user/Artararam",
+					"rating": "NSFW",
+					"artist": "Artararam",
+					"artist_platform": "FA",
+					"path_to_art": "@/assets/ref/characters/Xen/art/nsfw/Artararam [FA]/WIP - U-TGHqvAlbA.jpg"
+				},
+				{
+					"character": "Xen",
+					"effective_artist_link": "https://furaffinity.net/user/marsCCTS+SkyDeerToons",
+					"rating": "NSFW",
+					"artist": "marsCCTS+SkyDeerToons",
+					"artist_platform": "FA",
+					"path_to_art": "@/assets/ref/characters/Xen/art/nsfw/marsCCTS+SkyDeerToons [FA]/1536158872.marsccts_bukkake_butts_ych_1.PNG"
+				},
+				{
+					"character": "Xen",
+					"effective_artist_link": "https://furaffinity.net/user/porin",
+					"rating": "NSFW",
+					"artist": "porin",
+					"artist_platform": "FA",
+					"path_to_art": "@/assets/ref/characters/Xen/art/nsfw/porin [FA]/leotheferret_FULL.png"
+				},
+				{
+					"character": "Xen",
+					"effective_artist_link": "https://furaffinity.net/user/PinkGatorPress",
+					"rating": "NSFW",
+					"artist": "PinkGatorPress",
+					"artist_platform": "FA",
+					"path_to_art": "@/assets/ref/characters/Xen/art/nsfw/PinkGatorPress [FA]/Videogame Downtime [high rez].png"
+				},
+				{
+					"character": "Xen",
+					"effective_artist_link": "https://furaffinity.net/user/Giaru",
+					"rating": "NSFW",
+					"artist": "Giaru",
+					"artist_platform": "FA",
+					"path_to_art": "@/assets/ref/characters/Xen/art/nsfw/Giaru [FA]/2 - 5DWDoAv.png"
+				},
+				{
+					"character": "Xen",
+					"effective_artist_link": "https://furaffinity.net/user/Giaru",
+					"rating": "NSFW",
+					"artist": "Giaru",
+					"artist_platform": "FA",
+					"path_to_art": "@/assets/ref/characters/Xen/art/nsfw/Giaru [FA]/3 - GlXSszD.png"
+				},
+				{
+					"character": "Xen",
+					"effective_artist_link": "https://furaffinity.net/user/Giaru",
+					"rating": "NSFW",
+					"artist": "Giaru",
+					"artist_platform": "FA",
+					"path_to_art": "@/assets/ref/characters/Xen/art/nsfw/Giaru [FA]/4 - LhOH0oi.png"
+				},
+				{
+					"character": "Xen",
+					"effective_artist_link": "https://furaffinity.net/user/Giaru",
+					"rating": "NSFW",
+					"artist": "Giaru",
+					"artist_platform": "FA",
+					"path_to_art": "@/assets/ref/characters/Xen/art/nsfw/Giaru [FA]/1 - fRakHyE.png"
+				},
+				{
+					"character": "Xen",
+					"effective_artist_link": "https://furaffinity.net/user/MentalStar",
+					"rating": "NSFW",
+					"artist": "MentalStar",
+					"artist_platform": "FA",
+					"path_to_art": "@/assets/ref/characters/Xen/art/nsfw/MentalStar [FA]/ych-sig.jpg"
+				},
+				{
+					"character": "Xen",
+					"effective_artist_link": "https://furaffinity.net/user/MentalStar",
+					"rating": "NSFW",
+					"artist": "MentalStar",
+					"artist_platform": "FA",
+					"path_to_art": "@/assets/ref/characters/Xen/art/nsfw/MentalStar [FA]/ych2-sig.jpg"
+				},
+				{
+					"character": "Xen",
+					"effective_artist_link": "https://furaffinity.net/user/MentalStar",
+					"rating": "NSFW",
+					"artist": "MentalStar",
+					"artist_platform": "FA",
+					"path_to_art": "@/assets/ref/characters/Xen/art/nsfw/MentalStar [FA]/ych_oh_sig.png"
+				},
+				{
+					"character": "Xen",
+					"effective_artist_link": "https://furaffinity.net/user/Zyira",
+					"rating": "NSFW",
+					"artist": "Zyira",
+					"artist_platform": "FA",
+					"path_to_art": "@/assets/ref/characters/Xen/art/nsfw/Zyira [FA]/1101 lights3a small.png"
+				},
+				{
+					"character": "Xen",
+					"effective_artist_link": "https://furaffinity.net/user/Foxkin",
+					"rating": "NSFW",
+					"artist": "Foxkin",
+					"artist_platform": "FA",
+					"path_to_art": "@/assets/ref/characters/Xen/art/nsfw/Foxkin [FA]/xen.png"
+				},
+				{
+					"character": "Xen",
+					"effective_artist_link": "https://furaffinity.net/user/Foxkin",
+					"rating": "NSFW",
+					"artist": "Foxkin",
+					"artist_platform": "FA",
+					"path_to_art": "@/assets/ref/characters/Xen/art/nsfw/Foxkin [FA]/xen_wet.png"
+				},
+				{
+					"character": "Xen",
+					"effective_artist_link": "https://furaffinity.net/user/marsCCTS",
+					"rating": "NSFW",
+					"artist": "marsCCTS",
+					"artist_platform": "FA",
+					"path_to_art": "@/assets/ref/characters/Xen/art/nsfw/marsCCTS [FA]/leotheferret.png"
+				}
+			],
+			"sfw_art": [
+				{
+					"character": "Xen",
+					"effective_artist_link": "https://furaffinity.net/user/XENPHIRA",
+					"rating": "SFW",
+					"isref": true,
+					"artist": "XENPHIRA",
+					"artist_platform": "FA",
+					"path_to_art": "@/assets/ref/characters/Xen/ref/sfw/ref.png"
+				},
+				{
+					"character": "Xen",
+					"effective_artist_link": "https://furaffinity.net/user/irishthorns",
+					"rating": "SFW",
+					"isref": false,
+					"artist": "irishthorns",
+					"artist_platform": "FA",
+					"path_to_art": "@/assets/ref/characters/Xen/art/sfw/irishthorns [FA]/Xen Portrait.png"
+				},
+				{
+					"character": "Xen",
+					"effective_artist_link": "https://instagram.com/grey.paints",
+					"rating": "SFW",
+					"isref": false,
+					"artist": "grey.paints",
+					"artist_platform": "Instagram",
+					"path_to_art": "@/assets/ref/characters/Xen/art/sfw/grey.paints [Instagram]/TRADE_Xen.png"
+				},
+				{
+					"character": "Xen",
+					"effective_artist_link": "https://twitter.com/Sleepy_Screen",
+					"rating": "SFW",
+					"isref": false,
+					"artist": "Sleepy_Screen",
+					"artist_platform": "Twitter",
+					"path_to_art": "@/assets/ref/characters/Xen/art/sfw/Sleepy_Screen [Twitter]/3-29-19-comm4.png"
+				},
+				{
+					"character": "Xen",
+					"effective_artist_link": "https://furaffinity.net/user/rinzy",
+					"rating": "SFW",
+					"isref": false,
+					"artist": "rinzy",
+					"artist_platform": "FA",
+					"path_to_art": "@/assets/ref/characters/Xen/art/sfw/rinzy [FA]/xen.jpg"
+				},
+				{
+					"character": "Xen",
+					"effective_artist_link": "https://furaffinity.net/user/NightTwilightWolf",
+					"rating": "SFW",
+					"isref": false,
+					"artist": "NightTwilightWolf",
+					"artist_platform": "FA",
+					"path_to_art": "@/assets/ref/characters/Xen/art/sfw/NightTwilightWolf [FA]/pride_sticker_xen_by_nighttwilightwolf-dcdl8vc.png"
+				},
+				{
+					"character": "Xen",
+					"effective_artist_link": "https://furaffinity.net/user/feve",
+					"rating": "SFW",
+					"isref": false,
+					"artist": "feve",
+					"artist_platform": "FA",
+					"path_to_art": "@/assets/ref/characters/Xen/art/sfw/feve [FA]/1528517060.feve_leotheferretlineless2.png"
+				},
+				{
+					"character": "Xen",
+					"effective_artist_link": "https://furaffinity.net/user/PUNXSIMON",
+					"rating": "SFW",
+					"isref": false,
+					"artist": "PUNXSIMON",
+					"artist_platform": "FA",
+					"path_to_art": "@/assets/ref/characters/Xen/art/sfw/PUNXSIMON [FA]/xen_by_punx_simon-dcbkc43.png"
+				},
+				{
+					"character": "Xen",
+					"effective_artist_link": "https://furaffinity.net/user/leotheferret",
+					"rating": "SFW",
+					"isref": false,
+					"artist": "leotheferret",
+					"artist_platform": "FA",
+					"path_to_art": "@/assets/ref/characters/Xen/art/sfw/leotheferret [FA]/XEN_PC_PIC.png"
+				},
+				{
+					"character": "Xen",
+					"effective_artist_link": "https://furaffinity.net/user/Zyira",
+					"rating": "SFW",
+					"isref": false,
+					"artist": "Zyira",
+					"artist_platform": "FA",
+					"path_to_art": "@/assets/ref/characters/Xen/art/sfw/Zyira [FA]/1101 lights3aa small.png"
+				},
+				{
+					"character": "Xen",
+					"effective_artist_link": "https://furaffinity.net/user/songgoishtar",
+					"rating": "SFW",
+					"isref": false,
+					"artist": "songgoishtar",
+					"artist_platform": "FA",
+					"path_to_art": "@/assets/ref/characters/Xen/art/sfw/songgoishtar [FA]/aRwdjKj.png"
+				},
+				{
+					"character": "Xen",
+					"effective_artist_link": "https://twitter.com/PurrBone",
+					"rating": "SFW",
+					"isref": false,
+					"artist": "PurrBone",
+					"artist_platform": "Twitter",
+					"path_to_art": "@/assets/ref/characters/Xen/art/sfw/PurrBone [Twitter]/Xen_Halloween.png"
+				},
+				{
+					"character": "Xen",
+					"effective_artist_link": "https://furaffinity.net/user/Regigi9",
+					"rating": "SFW",
+					"isref": false,
+					"artist": "Regigi9",
+					"artist_platform": "FA",
+					"path_to_art": "@/assets/ref/characters/Xen/art/sfw/Regigi9 [FA]/1559207155.regigi9_leotheferret__small_.jpg"
+				}
+			],
+			"path_to_sfw_art": "../../assets/ref/characters/Xen/art/sfw/"
+		},
+		{
+			"art_types": [
+
+			],
+			"character_data": {
+				"dislikes": [
+
+				],
+				"colors": [
+
+				],
+				"age": "",
+				"original_owner": "XENPHIRA",
+				"adopted": false,
+				"name": "",
+				"description": "",
+				"likes": [
+
+				],
+				"pronouns": "",
+				"personality_traits": [
+
+				]
+			},
+			"character": "Yvette",
+			"enabled": false,
+			"path_to_thumb": "None",
+			"path_to_sfw_ref": "None",
+			"path_to_nsfw_ref": "None",
+			"path_to_nsfw_art": null,
+			"nsfw_art": null,
+			"sfw_art": null,
+			"path_to_sfw_art": null
+		}
+	]
+}
