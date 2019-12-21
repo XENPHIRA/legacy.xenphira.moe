@@ -1,0 +1,28 @@
+{
+    "name": "",
+    "pronouns": "x/y/z",
+    "enabled": false,
+    "age": "",
+    "description": "",
+    "colors": [
+        {
+            "label":"fixme",
+            "color":"#000000"
+        }
+    ],
+    "likes": [
+        "a",
+        "b",
+        "c"
+    ],
+    "dislikes": [
+        "d",
+        "e"
+    ],
+    "personality_traits": [
+        "f",
+        "g"
+    ],
+    "adopted": false,
+    "original_owner": "XENPHIRA"
+}

@@ -77,11 +77,19 @@
 
   import chardata from "./data.json";
 
+  var currentUrl = window.location.pathname;
+  var currentSearch = window.location.search;
+  var currentOptions = currentSearch.split("?")[1].split("&");
+  //currentOptions.shift(); // remove blank first element
+
+  console.log(currentUrl);
+  console.log(currentOptions);
+
   var enabled_chars = [];
 
   var i = 0;
   for (i=0; i<chardata["characters"].length; i++) {
-    if (chardata["characters"][i]["enabled"] == true) {
+    if (chardata["characters"][i]["character_data"]["enabled"] == true) {
       enabled_chars.push(chardata["characters"][i]);
     }
   }
