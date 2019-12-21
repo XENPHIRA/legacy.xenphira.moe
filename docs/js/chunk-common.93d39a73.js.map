@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack:///./src/plugins/vuetify.js"],"names":["Vue","use","Vuetify"],"mappings":"gHAAA,4BAGAA,OAAIC,IAAIC,QAEO,WAAIA,OAAQ,K","file":"js/chunk-common.93d39a73.js","sourcesContent":["import Vue from 'vue';\nimport Vuetify from 'vuetify/lib';\n\nVue.use(Vuetify);\n\nexport default new Vuetify({\n});\n"],"sourceRoot":""}
