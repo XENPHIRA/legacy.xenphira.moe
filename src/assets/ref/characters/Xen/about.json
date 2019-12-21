@@ -1,16 +1,56 @@
 {
     "name": "Xenphira Hollyvine",
     "pronouns": "She/Her/Hers",
+    "enabled": true,
     "age": "23",
     "description": "A pink husky who likes to party!",
     "colors": [
-        "fixme",
-        "hex",
-        "here"
+        {
+            "label":"Fur",
+            "color":"#FEDDB5"
+        },
+        {
+            "label":"Tum/Chest",
+            "color":"#FEC3C3"
+        },
+        {
+            "label":"Hair",
+            "color":"#FEB6E0"
+        },
+        {
+            "label":"Eyes",
+            "color":"#E33006"
+        },
+        {
+            "label":"Paw Pads/Tongue",
+            "color":"#279AE0"
+        },
+        {
+            "label":"Tail (1)",
+            "color":"#F09FB6"
+        },
+        {
+            "label":"Tail (2)",
+            "color":"#FEB6E0"
+        },
+        {
+            "label":"Tail (3)",
+            "color":"#F1B49F"
+        }
     ],
-    "likes": [],
-    "dislikes": [],
-    "personality_traits": [],
+    "likes": [
+        "dancing",
+        "electronic music",
+        "rainy weather"
+    ],
+    "dislikes": [
+        "toxic people",
+        "neatness"
+    ],
+    "personality_traits": [
+        "carefree",
+        "smug"
+    ],
     "adopted": false,
     "original_owner": "XENPHIRA"
 }

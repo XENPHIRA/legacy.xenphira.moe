@@ -72,7 +72,7 @@
             </p>
             <p>Name: {{ dat["commission_name"] }}</p>
             <br />
-            <p style="font-style: italic;">Note: Times listed in Eastern Time</p>
+            <!--<p style="font-style: italic;">Note: Times listed in Eastern Time</p>-->
           </v-col>
         </v-row>
         <v-row>
