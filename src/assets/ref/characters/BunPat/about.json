@@ -1,0 +1,38 @@
+{
+    "name": "Bun Pat",
+    "pronouns": "They/Them/Theirs",
+    "species": "Lagomorph (Rabbit)",
+    "enabled": true,
+    "age": "22",
+    "description": "A soft bun. NO NSFW ALLOWED!",
+    "colors": [
+        {
+            "label":"Fur (Main)",
+            "color":"#C6A26E"
+        },
+        {
+            "label":"Fur (Secondary)",
+            "color":"#FFF7EC"
+        },
+        {
+            "label":"Hair",
+            "color":"#6F4A14"
+        },
+        {
+            "label":"Eyes",
+            "color":"#2F9075"
+        },
+        {
+            "label":"Nose/Inner Ears",
+            "color":"#F3D6E2"
+        }
+    ],
+    "likes": [
+    ],
+    "dislikes": [
+    ],
+    "personality_traits": [
+    ],
+    "adopted": false,
+    "original_owner": "XENPHIRA"
+}

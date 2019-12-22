@@ -1,9 +1,10 @@
 {
-    "name": "",
-    "pronouns": "x/y/z",
+    "name": "Seth",
+    "pronouns": "He/Him/His or They/Them/Theirs",
+    "species": "Bovidae (Sheep)",
     "enabled": false,
-    "age": "",
-    "description": "",
+    "age": "19",
+    "description": "Shy Sheep",
     "colors": [
         {
             "label":"fixme",
@@ -11,18 +12,11 @@
         }
     ],
     "likes": [
-        "a",
-        "b",
-        "c"
     ],
     "dislikes": [
-        "d",
-        "e"
     ],
     "personality_traits": [
-        "f",
-        "g"
     ],
-    "adopted": false,
-    "original_owner": "XENPHIRA"
+    "adopted": true,
+    "original_owner": "jioojyadaisy"
 }

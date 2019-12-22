@@ -1,27 +1,41 @@
 {
-    "name": "",
-    "pronouns": "x/y/z",
+    "name": "Astra",
+    "pronouns": "He/Him/His",
+    "species": "Lagomorph (Rabbit)",
     "enabled": true,
-    "age": "",
-    "description": "",
+    "age": "24",
+    "description": "Rabbit Voiced by Ben Schwartz (in my dreams)",
     "colors": [
         {
-            "label":"fixme",
-            "color":"#000000"
+            "label":"Fur (main)",
+            "color":"#34609F"
+        },
+        {
+            "label":"Fur (secondary)",
+            "color":"#BBE1FF"
+        },
+        {
+            "label":"Nose/Inner-Ear",
+            "color":"#F9B0D8"
+        },
+        {
+            "label":"Eyes",
+            "color":"#1C54B1"
+        },
+        {
+            "label":"Hair (dark)",
+            "color":"#132E47"
+        },
+        {
+            "label":"Hair (highlights)",
+            "color":"#6DF0C9"
         }
     ],
     "likes": [
-        "a",
-        "b",
-        "c"
     ],
     "dislikes": [
-        "d",
-        "e"
     ],
     "personality_traits": [
-        "f",
-        "g"
     ],
     "adopted": false,
     "original_owner": "XENPHIRA"

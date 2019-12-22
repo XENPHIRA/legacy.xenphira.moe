@@ -1,27 +1,41 @@
 {
-    "name": "",
-    "pronouns": "x/y/z",
+    "name": "Cocoa",
+    "pronouns": "He/Him/His",
+    "species": "Primate (Monkey)",
     "enabled": true,
-    "age": "",
-    "description": "",
+    "age": "21",
+    "description": "Gay monkey haha",
     "colors": [
         {
-            "label":"fixme",
-            "color":"#000000"
+            "label":"Fur (main)",
+            "color":"#9C7064"
+        },
+        {
+            "label":"Fur (secondary)",
+            "color":"#E1CAC2"
+        },
+        {
+            "label":"Hair",
+            "color":"#6A3A2E"
+        },
+        {
+            "label":"Eyes",
+            "color":"#0D6344"
+        },
+        {
+            "label":"Soft-tissue",
+            "color":"#D99EA4"
+        },
+        {
+            "label":"Beanie hat (optional)",
+            "color":""
         }
     ],
     "likes": [
-        "a",
-        "b",
-        "c"
     ],
     "dislikes": [
-        "d",
-        "e"
     ],
     "personality_traits": [
-        "f",
-        "g"
     ],
     "adopted": false,
     "original_owner": "XENPHIRA"
