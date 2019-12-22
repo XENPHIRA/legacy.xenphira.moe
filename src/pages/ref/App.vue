@@ -50,16 +50,56 @@
 
     <v-content>
       <v-container
-        class="fill-height"
         fluid
       >
-        <v-row
-          align="center"
-          justify="center"
+        <div
           v-if="singleCharPage"
         >
-          {{ singleCharData }}
-        </v-row>
+          <v-row align="center" justify="center">
+            <h1>{{ singleCharData['character_data']['name'] }}</h1>
+          </v-row>
+          <v-row align="center" justify="center">
+            <h4>
+              {{ singleCharData['character_data']['age'] }}
+              //
+              {{ singleCharData['character_data']['pronouns'] }}
+              //
+              {{ singleCharData['character_data']['species'] }}
+            </h4>
+          </v-row>
+          <v-row align="center" justify="center">
+            <h5>
+              {{ singleCharData['character_data']['description'] }}
+            </h5>
+          </v-row>
+          <!-- 
+            TODO:
+             - Dynamically generate color squares/rectangles 
+               with color(s) from char data that include 
+               the hex and label
+          -->
+          <v-row align="center" justify="center">
+            <v-col align="center">
+              <h3>Likes</h3>
+                <ul>
+                  <li
+                    v-for="like in singleCharData['character_data']['likes']"
+                    v-bind:key="like"
+                  >{{ like }}</li>
+                </ul>
+            </v-col>
+            <v-col align="center">
+              <h3>Dislikes</h3>
+              <ul>
+                  <li
+                    v-for="dislike in singleCharData['character_data']['dislikes']"
+                    v-bind:key="dislike"
+                  >{{ dislike }}</li>
+              </ul>
+            </v-col>
+          </v-row>
+
+        </div>
         <v-row
           align="center"
           justify="center"
@@ -85,12 +125,14 @@
 
   import chardata from "./data.json";
 
-  var currentUrl = window.location.pathname;
+  // var currentUrl = window.location.pathname;
   var currentSearch = window.location.search;
   var currentOptions;
 
   var singleCharPage = false; // if true, then art of one character will be displayed
   var singleCharData = null;
+
+  var sfw = true; // false if going to display nsfw
 
   try {
     currentOptions = currentSearch.split("?")[1].split("&");
@@ -134,9 +176,9 @@
   }
   //currentOptions.shift(); // remove blank first element
 
-  console.log("currentUrl: " + currentUrl);
-  console.log("currentOptions: " + currentOptions);
-  console.log(breakdown)
+  // console.log("currentUrl: " + currentUrl);
+  // console.log("currentOptions: " + currentOptions);
+  // console.log(breakdown)
 
   var enabled_chars = [];
 
@@ -163,7 +205,8 @@
       char: enabled_chars,
       singleCharPage: singleCharPage,
       multiCharPage: !singleCharPage,
-      singleCharData: singleCharData
+      singleCharData: singleCharData,
+      sfw: sfw
     }),
 
     created () {
