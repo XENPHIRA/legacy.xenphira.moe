@@ -1,28 +1,38 @@
 {
-    "name": "",
-    "pronouns": "x/y/z",
+    "name": "Yvette",
+    "pronouns": "She/Her/Hers",
+    "species": "Feline (Cat)",
     "enabled": true,
-    "age": "",
-    "description": "",
+    "age": "23",
+    "description": "Fight Cat!",
     "colors": [
         {
-            "label":"fixme",
-            "color":"#000000"
+            "label":"Fur (main)",
+            "color":"#FFEBC4"
+        },
+        {
+            "label":"Fur (secondary)",
+            "color":"#FFF6E5"
+        },
+        {
+            "label":"Eye (left)",
+            "color":"#00689F"
+        },
+        {
+            "label":"Eye (right)",
+            "color":"#008700"
+        },
+        {
+            "label":"Paw Beans/soft tissue",
+            "color":"#DBA6C3"
         }
     ],
     "likes": [
-        "a",
-        "b",
-        "c"
     ],
     "dislikes": [
-        "d",
-        "e"
     ],
     "personality_traits": [
-        "f",
-        "g"
     ],
-    "adopted": false,
-    "original_owner": "XENPHIRA"
+    "adopted": true,
+    "original_owner": "TammyTammycat"
 }

@@ -1,9 +1,10 @@
 {
-    "name": "",
-    "pronouns": "x/y/z",
+    "name": "Kae",
+    "pronouns": "She/Her/Hers",
+    "species": "Shark",
     "enabled": false,
-    "age": "",
-    "description": "",
+    "age": "26",
+    "description": "She a shork!",
     "colors": [
         {
             "label":"fixme",
@@ -11,18 +12,11 @@
         }
     ],
     "likes": [
-        "a",
-        "b",
-        "c"
     ],
     "dislikes": [
-        "d",
-        "e"
     ],
     "personality_traits": [
-        "f",
-        "g"
     ],
-    "adopted": false,
-    "original_owner": "XENPHIRA"
+    "adopted": true,
+    "original_owner": "jioojyadaisy "
 }

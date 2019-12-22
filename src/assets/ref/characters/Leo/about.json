@@ -1,0 +1,30 @@
+{
+    "name": "Léo",
+    "pronouns": "He/Him/His",
+    "species": "Mustelid (Ferret)",
+    "enabled": true,
+    "age": "20",
+    "description": "The OG Ferret Boy",
+    "colors": [
+        {
+            "label":"Body",
+            "color":"#D1B178"
+        },
+        {
+            "label":"Nose + Ears",
+            "color":"#F8BCBE"
+        },
+        {
+            "label":"Eyes",
+            "color":"#76B1D9"
+        }
+    ],
+    "likes": [
+    ],
+    "dislikes": [
+    ],
+    "personality_traits": [
+    ],
+    "adopted": false,
+    "original_owner": "XENPHIRA"
+}
