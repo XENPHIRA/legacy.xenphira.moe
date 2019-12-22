@@ -131,7 +131,7 @@
             </v-col>
           </v-row>
           <v-row align="center" justify="center">
-            <img :src="getImgRefSfw(singleCharData)" :alt="'Reference for ' + singleCharData['character']" />
+            <img width="100%" :src="getImgRefSfw(singleCharData)" :alt="'Reference for ' + singleCharData['character']" />
           </v-row>
           <v-row align="center" justify="center" v-if="singleCharData.character_data.adopted == true">
             <i>Adopted from {{ singleCharData.character_data.original_owner }} with love &lt;3</i>
