@@ -45,8 +45,7 @@
         clipped-left
     >
         <v-app-bar-nav-icon @click.stop="drawer = !drawer" />
-        <v-toolbar-title v-if="!enableNSFWcontent">XENPHIRA</v-toolbar-title>
-        <v-toolbar-title v-if="enableNSFWcontent">XENPHIRA <span style="color: red;">(NSFW)</span></v-toolbar-title>
+        <v-toolbar-title>XENPHIRA <span v-if="enableNSFWcontent" style="color: red;">(NSFW)</span></v-toolbar-title>
     </v-app-bar>
 
     <v-content>
@@ -76,10 +75,14 @@
 
 <script>
 
-  var enableNSFWcontent = window.location.hostname.split(".")[0].toUpperCase() === "AFTERDARK";
-  var debug = window.location.pathname.split("/");
-  debug.shift();
-  debug.pop();
+  var pathname = window.location.pathname.split("/");
+  pathname.shift(); pathname.pop();
+  var enableNSFWcontent = false;
+  try {
+    enableNSFWcontent = pathname[0].toUpperCase() === "NSFW";
+  } catch (error) {
+    enableNSFWcontent = false;
+  }
 
   export default {
     components: {
