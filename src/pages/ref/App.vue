@@ -126,7 +126,7 @@
             </h5>
           </v-row>
           <v-row align="center" justify="center">
-            <v-col align="center">
+            <v-col align="center" cols=3>
               <table>
               <!-- <tr> -->
                 <tr
@@ -145,7 +145,7 @@
             </v-col>
           <!-- </v-row>
           <v-row align="center" justify="center"> -->
-            <v-col align="center"
+            <!-- <v-col align="center"
             v-if="likes">
               <h3>Likes</h3>
                 <ul>
@@ -164,11 +164,14 @@
                     v-bind:key="dislike"
                   >{{ dislike }}</li>
               </ul>
+            </v-col> -->
+            <v-col>
+              <img width="100%" :src="getImgRefSfw(singleCharData)" :alt="'Reference for ' + singleCharData['character']" />
             </v-col>
           </v-row>
-          <v-row align="center" justify="center">
+          <!-- <v-row align="center" justify="center">
             <img width="100%" :src="getImgRefSfw(singleCharData)" :alt="'Reference for ' + singleCharData['character']" />
-          </v-row>
+          </v-row> -->
           <v-row align="center" justify="center" v-if="singleCharData.character_data.adopted == true">
             <i>Adopted from {{ singleCharData.character_data.original_owner }} with love &lt;3</i>
           </v-row>
