@@ -60,10 +60,12 @@
         </v-row>
         <v-row>
           <v-col>
+            <!-- remove :items-per-page="5" -->
             <v-data-table
               :headers="headers"
               :items="commissions"
-              :items-per-page="5"
+              :disable-pagination="true"
+              :hide-default-footer="true"
               class="elevation-1"
             >
               <template v-slot:item.commission_name="{ item }">
