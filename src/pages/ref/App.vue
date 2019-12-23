@@ -52,21 +52,25 @@
       <v-container
         fluid
       >
+      <v-row v-if="debug" align="center" justify="center">
+          <p>DEBUG: {{ debug }}</p>
+      </v-row>
         <div
           v-if="singleCharPage"
         >
           <v-row align="center" justify="center">
-            <a href="/ref">&lt;-- Return to Character List</a>
+            <a href="/ref" v-if="!enableNSFWcontent">&lt;-- Return to Character List</a>
+            <a href="/nsfw/ref" v-if="enableNSFWcontent">&lt;-- Return to Character List</a>
           </v-row>
           <v-row align="center" justify="center">
             <span v-if="isThereNsfw(singleCharData)">
-              <span v-if="rating == 'NSFW'">
-                <a :href="'/ref?char='+singleCharData.character">
+              <span v-if="rating == 'NSFW' && enableNSFWcontent">
+                <a :href="'/nsfw/ref?char='+singleCharData.character">
                   !! Hide NSFW Art !!
                 </a>
               </span>
-              <span v-if="rating == 'SFW'">
-                <a :href="'/ref?char='+singleCharData.character+'&rating=nsfw'">
+              <span v-if="rating == 'SFW' && enableNSFWcontent">
+                <a :href="'/nsfw/ref?char='+singleCharData.character+'&rating=nsfw'">
                   !! Show NSFW Art !!
                 </a>
               </span>
@@ -138,7 +142,7 @@
           </v-row>
 
           <v-row align="center" justify="center">
-            <div id="nsfw" v-if="singleCharData.nsfw_art && rating == 'NSFW'">
+            <div id="nsfw" v-if="singleCharData.nsfw_art && rating == 'NSFW' && enableNSFWcontent">
               <v-col
               v-for="art in singleCharData.nsfw_art"
               v-bind:key="art.path_to_art">
@@ -200,7 +204,8 @@
            v-for="character in char"
            v-bind:key="character['character']"
            >
-            <a :href="'/ref?char='+character['character']"><img width="250 em" :src="getImgThumb(character)" :alt="character['character']" /></a>
+            <a v-if="!enableNSFWcontent" :href="'/ref?char='+character['character']"><img width="250 em" :src="getImgThumb(character)" :alt="character['character']" /></a>
+            <a v-if="enableNSFWcontent" :href="'/nsfw/ref?char='+character['character']"><img width="250 em" :src="getImgThumb(character)" :alt="character['character']" /></a>
           </v-col>
         </v-row>
       </v-container>
@@ -224,6 +229,16 @@
   var singleCharData = null;
 
   var sfw = true; // false if going to display nsfw
+  // var enableNSFWcontent = window.location.hostname.split(".")[0].toUpperCase() === "AFTERDARK";
+
+  var pathname = window.location.pathname.split("/");
+  pathname.shift(); pathname.pop();
+  var enableNSFWcontent = false;
+  try {
+    enableNSFWcontent = pathname[0].toUpperCase() === "NSFW";
+  } catch (error) {
+    enableNSFWcontent = false;
+  }
 
   try {
     currentOptions = currentSearch.split("?")[1].split("&");
@@ -346,6 +361,7 @@
     },
 
     data: () => ({
+      enableNSFWcontent: enableNSFWcontent,
       drawer: null,
       char: enabled_chars,
       singleCharPage: singleCharPage,

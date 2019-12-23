@@ -122,6 +122,16 @@
 </template>
 
 <script>
+
+  var pathname = window.location.pathname.split("/");
+  pathname.shift(); pathname.pop();
+  var enableNSFWcontent = false;
+  try {
+    enableNSFWcontent = pathname[0].toUpperCase() === "NSFW";
+  } catch (error) {
+    enableNSFWcontent = false;
+  }
+
   export default {
     props: {
       //
@@ -133,6 +143,7 @@
 
     data: () => ({
       drawer: null,
+      enableNSFWcontent: enableNSFWcontent
     }),
 
     created () {

@@ -60,10 +60,12 @@
         </v-row>
         <v-row>
           <v-col>
+            <!-- remove :items-per-page="5" -->
             <v-data-table
               :headers="headers"
               :items="commissions"
-              :items-per-page="5"
+              :disable-pagination="true"
+              :hide-default-footer="true"
               class="elevation-1"
             >
               <template v-slot:item.commission_name="{ item }">
@@ -115,6 +117,15 @@
   /* eslint-disable no-unused-vars */
   import data from "./data/data.json";
 
+  var pathname = window.location.pathname.split("/");
+  pathname.shift(); pathname.pop();
+  var enableNSFWcontent = false;
+  try {
+    enableNSFWcontent = pathname[0].toUpperCase() === "NSFW";
+  } catch (error) {
+    enableNSFWcontent = false;
+  }
+
   var currentUrl = window.location.pathname;
   var currentSearch = window.location.search;
   var currentOptions = currentSearch.split("?")[1];
@@ -132,10 +143,13 @@
   var json_effective = [];
   for (var ctr = 0; ctr < data.length; ctr++) {
     var obj = data[ctr];
-    if (obj["state_complete"] == false) {
-      json_effective.push(obj);
-    } else if (showDone == true) {
-      json_effective.push(obj);
+    if (!obj["sfw"] && !enableNSFWcontent) {1==1;}
+    else {
+      if (obj["state_complete"] == false) {
+        json_effective.push(obj);
+      } else if (showDone == true) {
+        json_effective.push(obj);
+      }
     }
   }
   
@@ -187,7 +201,7 @@
           {
             text: "Time Since Start of Commission",
             align: "left",
-            sortable: false,
+            sortable: true,
             value: "commissiontime"
           }
         ]
