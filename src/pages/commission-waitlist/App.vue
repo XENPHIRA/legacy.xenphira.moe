@@ -163,6 +163,7 @@
 
     data() {
       return {
+        enableNSFWcontent: enableNSFWcontent,
         commissions: json_effective,
         time: now,
         currentOptions: currentOptionsDisplayText,

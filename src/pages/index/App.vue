@@ -91,8 +91,7 @@
 
     data: () => ({
       drawer: null,
-      enableNSFWcontent: enableNSFWcontent,
-      debug: debug
+      enableNSFWcontent: enableNSFWcontent
     }),
 
     created () {
