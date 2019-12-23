@@ -117,6 +117,8 @@
   /* eslint-disable no-unused-vars */
   import data from "./data/data.json";
 
+  var enableNSFWcontent = window.location.hostname.split(".")[0].toUpperCase() === "AFTERDARK";
+
   var currentUrl = window.location.pathname;
   var currentSearch = window.location.search;
   var currentOptions = currentSearch.split("?")[1];
@@ -134,10 +136,13 @@
   var json_effective = [];
   for (var ctr = 0; ctr < data.length; ctr++) {
     var obj = data[ctr];
-    if (obj["state_complete"] == false) {
-      json_effective.push(obj);
-    } else if (showDone == true) {
-      json_effective.push(obj);
+    if (!obj["sfw"] && !enableNSFWcontent) {1==1;}
+    else {
+      if (obj["state_complete"] == false) {
+        json_effective.push(obj);
+      } else if (showDone == true) {
+        json_effective.push(obj);
+      }
     }
   }
   
