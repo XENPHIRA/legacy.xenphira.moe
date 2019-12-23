@@ -52,9 +52,7 @@
       <v-container
         fluid
       >
-      <v-row v-if="debug" align="center" justify="center">
-          <p>DEBUG: {{ debug }}</p>
-      </v-row>
+      
         <div
           v-if="singleCharPage"
         >
