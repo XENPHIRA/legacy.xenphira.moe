@@ -5,7 +5,7 @@
         app
         clipped
     >
-        <v-list dense>
+        <v-list dense id="sfwNAV" v-if="!enableNSFWcontent">
             <v-list-item link href="/">
                 <v-list-item-action>
                 <v-icon>mdi-home</v-icon>
@@ -31,6 +31,40 @@
                 </v-list-item-content>
             </v-list-item>
             <v-list-item link href="/waitlist">
+                <v-list-item-action>
+                <v-icon>mdi-timelapse</v-icon>
+                </v-list-item-action>
+                <v-list-item-content>
+                <v-list-item-title>COMMISSION WAITLIST</v-list-item-title>
+                </v-list-item-content>
+            </v-list-item>
+        </v-list>
+        <v-list dense id="nsfwNAV" v-if="enableNSFWcontent">
+            <v-list-item link href="/nsfw/">
+                <v-list-item-action>
+                <v-icon>mdi-home</v-icon>
+                </v-list-item-action>
+                <v-list-item-content>
+                <v-list-item-title>HOME</v-list-item-title>
+                </v-list-item-content>
+            </v-list-item>
+            <v-list-item link href="/nsfw/social">
+                <v-list-item-action>
+                <v-icon>mdi-internet-explorer</v-icon>
+                </v-list-item-action>
+                <v-list-item-content>
+                <v-list-item-title>SOCIAL</v-list-item-title>
+                </v-list-item-content>
+            </v-list-item>
+            <v-list-item link href="/nsfw/ref">
+                <v-list-item-action>
+                <v-icon>mdi-image-album</v-icon>
+                </v-list-item-action>
+                <v-list-item-content>
+                <v-list-item-title>REFERENCES</v-list-item-title>
+                </v-list-item-content>
+            </v-list-item>
+            <v-list-item link href="/nsfw/waitlist">
                 <v-list-item-action>
                 <v-icon>mdi-timelapse</v-icon>
                 </v-list-item-action>
