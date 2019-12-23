@@ -8,6 +8,7 @@
 .PHONY = clean
 
 BUILD_DIR = "./docs/"
+BUILD_DATE = $(shell date --iso=seconds)
 
 info:
 	@echo "Please run a command"
@@ -32,5 +33,5 @@ servestep:
 build: charhelper buildstep
 
 buildstep:
-	(npm run build && git add . && git commit -m "Build $(date --iso-8601=seconds)")
+	(npm run build && git add . && git commit -m "Build $(BUILD_DATE)")
 	@echo "Remember to push!"
