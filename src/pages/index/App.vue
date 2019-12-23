@@ -62,9 +62,6 @@
             <h1 style="font-size:4em;">I AM XENPHIRA</h1>
           </v-col>
         </v-row>
-        <v-row v-if="debug" align="center" justify="center">
-          <p>DEBUG: {{ debug }}</p>
-        </v-row>
         <v-row v-if="enableNSFWcontent" align="center" justify="center">
           <p>Spicy Edition</p>
         </v-row>
