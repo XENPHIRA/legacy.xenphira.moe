@@ -117,7 +117,14 @@
   /* eslint-disable no-unused-vars */
   import data from "./data/data.json";
 
-  var enableNSFWcontent = window.location.hostname.split(".")[0].toUpperCase() === "AFTERDARK";
+  var pathname = window.location.pathname.split("/");
+  pathname.shift(); pathname.pop();
+  var enableNSFWcontent = false;
+  try {
+    enableNSFWcontent = pathname[0].toUpperCase() === "NSFW";
+  } catch (error) {
+    enableNSFWcontent = false;
+  }
 
   var currentUrl = window.location.pathname;
   var currentSearch = window.location.search;
