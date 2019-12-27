@@ -1943,7 +1943,7 @@
 		],
         "detail_date_of_commission":"1576645680",
         "detail_date_of_completed_payment":"1576797420",
-        "latest_status":"Paid invoice",
+        "latest_status":"In Progress",
         "latest_status_link":"https://trello.com/c/xqmHonIm/74-xen-fb-complex-shading",
         "updates":[
 			{
@@ -1953,9 +1953,37 @@
 			{
                 "timestamp":"1576797420",
                 "status":"Paid PayPal invoice and notified artist via Telegram DM"
-            }
+			},
+			{
+				"timestamp": "1577321400",
+				"status": "Received pose sketch via Telegram DM"
+			},
+			{
+				"timestamp": "2019-12-25T22:52:00-05:00",
+				"status": "Received detailed sketch update via Telegram DM"
+			},
+			{
+				"timestamp": "2019-12-26T01:33:00-05:00",
+				"status": "Updated ink received via Telegram DM"
+			},
+			{
+				"timestamp": "2019-12-26T18:59:00-05:00",
+				"status": "Updated ink w/ alt version received via Telegram DM"
+			},
+			{
+				"timestamp": "2019-12-26T19:58:00-05:00",
+				"status": "Updated ink received via Telegram DM"
+			},
+			{
+				"timestamp": "2019-12-26T20:36:00-05:00",
+				"status": "flat colors on 1/4 version received via Telegram DM"
+			},
+			{
+				"timestamp": "2019-12-26T22:48:00-05:00",
+				"status": "flat with simple background received via Telegram DM"
+			}
         ],
         "state_complete":false,
-        "state_css":"notstarted"
+        "state_css":"inprogress"
     }
 ]
