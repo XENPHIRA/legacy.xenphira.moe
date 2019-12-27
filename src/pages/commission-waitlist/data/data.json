@@ -1959,27 +1959,27 @@
 				"status": "Received pose sketch via Telegram DM"
 			},
 			{
-				"timestamp": "2019-12-25T22:52:00-05:00",
+				"timestamp": "1577332320",
 				"status": "Received detailed sketch update via Telegram DM"
 			},
 			{
-				"timestamp": "2019-12-26T01:33:00-05:00",
+				"timestamp": "1577341980",
 				"status": "Updated ink received via Telegram DM"
 			},
 			{
-				"timestamp": "2019-12-26T18:59:00-05:00",
+				"timestamp": "1577404740",
 				"status": "Updated ink w/ alt version received via Telegram DM"
 			},
 			{
-				"timestamp": "2019-12-26T19:58:00-05:00",
+				"timestamp": "1577408280",
 				"status": "Updated ink received via Telegram DM"
 			},
 			{
-				"timestamp": "2019-12-26T20:36:00-05:00",
+				"timestamp": "1577410560",
 				"status": "flat colors on 1/4 version received via Telegram DM"
 			},
 			{
-				"timestamp": "2019-12-26T22:48:00-05:00",
+				"timestamp": "1577418480",
 				"status": "flat with simple background received via Telegram DM"
 			}
         ],
