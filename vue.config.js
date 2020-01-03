@@ -20,6 +20,12 @@ module.exports = {
       title: 'HOME',
       chunks: [ 'chunk-vendors', 'chunk-common', 'index' ]
     },
+    'music': {
+      entry: './src/pages/music/main.js',
+      template: 'public/index.html',
+      title: 'MUSIC',
+      chunks: [ 'chunk-vendors', 'chunk-common', 'music' ]
+    },
     'nsfw/social': {
       entry: './src/pages/social/main.js',
       template: 'public/index.html',
