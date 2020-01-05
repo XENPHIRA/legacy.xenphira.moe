@@ -2006,5 +2006,38 @@
         ],
         "state_complete":true,
         "state_css":"done"
+	},
+	{
+        "commission_id":"42c705c0",
+        "commission_name":"COMPLEX double for xenphira",
+        "commission_cost_USD":75.0,
+        "sfw":false,
+        "detail_artist":[
+            {
+                "artist_name":"serialdad",
+                "artist_url":"https://www.furaffinity.net/user/serialdad/"
+            }
+        ],
+        "detail_date_of_commission":"1578179880",
+        "detail_date_of_completed_payment":"1578192420",
+        "latest_status":"Paid, Not Started",
+        "latest_status_link":"https://trello.com/c/vav7mCN3/1104-complex-double-for-xenphira",
+        "updates":[
+            {
+                "timestamp":"1578179880",
+                "status":"Commented on commission post for slot",
+                "link":"https://www.furaffinity.net/view/34475400/"
+			},
+			{
+				"timestamp":"1578180540",
+				"status":"Sent comm info to artist"
+			},
+			{
+				"timestamp":"1578192420",
+				"status":"Paid invoice"
+			}
+        ],
+        "state_complete":false,
+        "state_css":"notstarted"
     }
 ]
