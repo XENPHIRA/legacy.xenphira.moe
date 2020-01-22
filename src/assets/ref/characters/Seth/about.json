@@ -2,10 +2,10 @@
     "name": "Seth",
     "pronouns": "He/Him/His or They/Them/Theirs",
     "species": "Bovidae (Sheep)",
-    "enabled": false,
+    "enabled": true,
     "age": "19",
     "description": "Shy Sheep",
-    "colors": [
+    "colors_FIXME": [
         {
             "label":"fixme",
             "color":"#000000"
