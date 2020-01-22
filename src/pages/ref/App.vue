@@ -230,19 +230,22 @@
           </v-row>
 
         </div>
-        <v-row
-          align="center"
-          justify="center"
-          v-if="multiCharPage"
-        >
-          <v-col
-           v-for="character in char"
-           v-bind:key="character['character']"
-           >
-            <a v-if="!enableNSFWcontent" :href="'/ref?char='+character['character']"><img width="250 em" :src="getImgThumb(character)" :alt="character['character']" /></a>
-            <a v-if="enableNSFWcontent" :href="'/nsfw/ref?char='+character['character']"><img width="250 em" :src="getImgThumb(character)" :alt="character['character']" /></a>
-          </v-col>
-        </v-row>
+        <div v-if="multiCharPage">
+          <v-row
+            align="center"
+            justify="center"
+            v-for="i in Math.ceil(char.length / 4)"
+            v-bind:key="i"
+          >
+            <v-col
+            v-for="character in char.slice((i - 1) * 4, i * 4)"
+            v-bind:key="character['character']"
+            >
+              <a v-if="!enableNSFWcontent" :href="'/ref?char='+character['character']"><img width="250 em" :src="getImgThumb(character)" :alt="character['character']" /></a>
+              <a v-if="enableNSFWcontent" :href="'/nsfw/ref?char='+character['character']"><img width="250 em" :src="getImgThumb(character)" :alt="character['character']" /></a>
+            </v-col>
+          </v-row>
+        </div>
       </v-container>
     </v-content>
 
