@@ -2037,7 +2037,7 @@
         ],
         "detail_date_of_commission":"1578179880",
         "detail_date_of_completed_payment":"1578192420",
-        "latest_status":"Paid, Not Started",
+        "latest_status":"Paid, In Progress",
         "latest_status_link":"https://trello.com/c/vav7mCN3/1104-complex-double-for-xenphira",
         "updates":[
             {
@@ -2052,10 +2052,18 @@
 			{
 				"timestamp":"1578192420",
 				"status":"Paid invoice"
+			},
+			{
+				"timestamp": "1580334540",
+				"status": "Trello: Completed 'thumnail' task"
+			},
+			{
+				"timestamp": "1580334900",
+				"status": "Trello: Completed 'Cleaned Sketch' task"
 			}
         ],
         "state_complete":false,
-        "state_css":"notstarted"
+        "state_css":"inprogress"
 	},
 	{
         "commission_id":"39380545",
