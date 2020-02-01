@@ -2037,8 +2037,8 @@
         ],
         "detail_date_of_commission":"1578179880",
         "detail_date_of_completed_payment":"1578192420",
-        "latest_status":"Paid, In Progress",
-        "latest_status_link":"https://trello.com/c/vav7mCN3/1104-complex-double-for-xenphira",
+        "latest_status":"Done",
+        "latest_status_link":"https://www.dropbox.com/sh/553yxt1c5ym80ku/AAAwjAt8B4N_GKSdB01cl22qa?dl=0",
         "updates":[
             {
                 "timestamp":"1578179880",
@@ -2055,15 +2055,27 @@
 			},
 			{
 				"timestamp": "1580334540",
-				"status": "Trello: Completed 'thumnail' task"
+				"status": "Trello: Completed 'thumnail' task",
+				"link": "https://trello.com/c/vav7mCN3/1104-complex-double-for-xenphira"
 			},
 			{
 				"timestamp": "1580334900",
-				"status": "Trello: Completed 'Cleaned Sketch' task"
+				"status": "Trello: Completed 'Cleaned Sketch' task",
+				"link": "https://trello.com/c/vav7mCN3/1104-complex-double-for-xenphira"
+			},
+			{
+				"timestamp": "1580499420",
+				"status": "Trello: Completed 'Colors','Shading','Finishing touches' tasks",
+				"link": "https://trello.com/c/vav7mCN3/1104-complex-double-for-xenphira"
+			},
+			{
+				"timestamp": "1580500440",
+				"status": "Received finished commission via FA Notes",
+				"link": "https://www.dropbox.com/sh/553yxt1c5ym80ku/AAAwjAt8B4N_GKSdB01cl22qa?dl=0"
 			}
         ],
-        "state_complete":false,
-        "state_css":"inprogress"
+        "state_complete":true,
+        "state_css":"done"
 	},
 	{
         "commission_id":"39380545",
