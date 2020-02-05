@@ -7,7 +7,18 @@ module.exports = {
   ],
   outputDir: 'docs/',
   publicPath: "/",
+  chainWebpack: config => {
+    config.module
+      .rule('file')
+      .test(/\.txt$/)
+      .use('file-loader')
+      .loader('file-loader')
+      .end()
+  },
   pages: {
+    'robots.txt': {
+      entry: './public/robots.txt'
+    },
     'nsfw/index': {
       entry: './src/pages/index/main.js',
       template: 'public/index.html',
