@@ -2114,8 +2114,8 @@
         ],
         "detail_date_of_commission":"1580951040",
         "detail_date_of_completed_payment":"1580952420",
-        "latest_status":"Paid, Not Started",
-        "latest_status_link":"",
+        "latest_status":"Done",
+        "latest_status_link":"https://drive.google.com/open?id=1t0f6KW_wv7uO9bI4V6Sj4QRBKxOkEy3v",
         "updates":[
             {
                 "timestamp":"1580949960",
@@ -2129,9 +2129,13 @@
             {
                 "timestamp": "1580952420",
                 "status": "commission details agreed upon and payment sent"
-            }
+			},
+			{
+				"timestamp": "1581291240",
+				"status": "Finished commission received via email"
+			}
         ],
-        "state_complete":false,
-        "state_css":"notstarted"
+        "state_complete":true,
+        "state_css":"done"
     }
 ]
