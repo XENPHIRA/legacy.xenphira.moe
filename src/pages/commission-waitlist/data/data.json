@@ -1241,7 +1241,7 @@
 			{
 				"timestamp": "1543001640",
 				"status": "Commission start",
-				"link": "#"
+				"link": "https://www.furaffinity.net/view/29443970/"
 			},
 			{
 				"timestamp": "1543625460",
@@ -1308,6 +1308,10 @@
 				"timestamp": "1579371828",
 				"status": "no WIP/progress indicated",
 				"link": "http://web.archive.org/web/20200118182519/http://web.archive.org/screenshot/https://trello.com/c/rNbX5Myg/470-paws-n-butt-ych"
+			},
+			{
+				"timestamp": "1581384720",
+				"status": "artist reached out via Telegram saying they are starting and needed the ref again"
 			}
 		],
 		"state_complete": false,
