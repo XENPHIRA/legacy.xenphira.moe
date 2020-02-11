@@ -1316,6 +1316,10 @@
 			{
 				"timestamp": "1581387300",
 				"status": "received updated sketch of prepose, approved adjustments"
+			},
+			{
+				"timestamp": "1581404760",
+				"status": "Received finished commission via Telegram"
 			}
 		],
 		"state_complete": false,
