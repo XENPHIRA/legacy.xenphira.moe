@@ -1312,6 +1312,10 @@
 			{
 				"timestamp": "1581384720",
 				"status": "artist reached out via Telegram saying they are starting and needed the ref again"
+			},
+			{
+				"timestamp": "1581387300",
+				"status": "received updated sketch of prepose, approved adjustments"
 			}
 		],
 		"state_complete": false,
