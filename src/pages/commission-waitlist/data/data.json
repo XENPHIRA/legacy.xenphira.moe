@@ -1235,7 +1235,7 @@
 		],
 		"detail_date_of_commission": "1543001640",
 		"detail_date_of_completed_payment": "1543625460",
-		"latest_status": "Paid, not started",
+		"latest_status": "Done",
 		"latest_status_link": "https://trello.com/c/rNbX5Myg/470-paws-n-butt-ych",
 		"updates": [
 			{
@@ -1316,10 +1316,14 @@
 			{
 				"timestamp": "1581387300",
 				"status": "received updated sketch of prepose, approved adjustments"
+			},
+			{
+				"timestamp": "1581404760",
+				"status": "Received finished commission via Telegram"
 			}
 		],
-		"state_complete": false,
-		"state_css": "notstarted"
+		"state_complete": true,
+		"state_css": "done"
 	},
 	{
 		"commission_id": "3c7e0565",
