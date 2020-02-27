@@ -2,7 +2,7 @@
     "name": "Léo",
     "pronouns": "He/Him/His",
     "species": "Mustelid (Ferret)",
-    "enabled": true,
+    "enabled": false,
     "age": "20",
     "description": "The OG Ferret Boy",
     "colors": [
