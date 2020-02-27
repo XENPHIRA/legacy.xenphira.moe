@@ -2,7 +2,7 @@
     "name": "Kae",
     "pronouns": "She/Her/Hers",
     "species": "Shark",
-    "enabled": true,
+    "enabled": false,
     "age": "26",
     "description": "She a shork!",
     "colors_FIXME": [
