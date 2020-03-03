@@ -2163,8 +2163,8 @@
         ],
         "detail_date_of_commission":"1582045500",
         "detail_date_of_completed_payment":"1582049820",
-        "latest_status":"Paid, Not Started",
-        "latest_status_link":"https://www.furaffinity.net/journal/9400648",
+        "latest_status":"Done",
+        "latest_status_link":"https://www.furaffinity.net/view/35272667/",
         "updates":[
             {
                 "timestamp":"1582045500",
@@ -2177,10 +2177,15 @@
 			{
                 "timestamp":"1582049820",
                 "status":"invoice received and paid"
-            }
+			},
+			{
+				"timestamp":"1583258040",
+				"status":"finished commission received",
+				"link": "https://drive.google.com/open?id=14W9ZofBY6NVG7_72Nsd3sVEMO75QrOpb"
+			}
         ],
-        "state_complete":false,
-        "state_css":"notstarted"
+        "state_complete":true,
+        "state_css":"done"
 	},
 	{
         "commission_id":"28210421",
