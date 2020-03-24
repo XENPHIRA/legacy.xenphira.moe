@@ -2242,16 +2242,20 @@
         ],
         "detail_date_of_commission":"1583980560",
         "detail_date_of_completed_payment":"1583980920",
-        "latest_status":"Paid (1/2), Not Started",
+        "latest_status":"Paid (1/2), Started",
         "latest_status_link":"https://www.furaffinity.net/user/oselotti",
         "updates":[
             {
                 "timestamp":"1583980920",
                 "status":"commission paid after slot acceptance"
-            }
+			},
+			{
+				"timestamp":"1581994800",
+				"status":"commisison work streamed on picarto, saw progress"
+			}
         ],
         "state_complete":false,
-        "state_css":"notstarted"
+        "state_css":"inprogress"
 	},
 	{
         "commission_id":"26820427",
