@@ -14,6 +14,14 @@
                 <v-list-item-title>HOME</v-list-item-title>
                 </v-list-item-content>
             </v-list-item>
+            <v-list-item link href="/data">
+                <v-list-item-action>
+                <v-icon>mdi-database</v-icon>
+                </v-list-item-action>
+                <v-list-item-content>
+                <v-list-item-title>DATA</v-list-item-title>
+                </v-list-item-content>
+            </v-list-item>
             <v-list-item link href="/social">
                 <v-list-item-action>
                 <v-icon>mdi-internet-explorer</v-icon>
@@ -46,6 +54,14 @@
                 </v-list-item-action>
                 <v-list-item-content>
                 <v-list-item-title>HOME</v-list-item-title>
+                </v-list-item-content>
+            </v-list-item>
+            <v-list-item link href="/nsfw/data">
+                <v-list-item-action>
+                <v-icon>mdi-database</v-icon>
+                </v-list-item-action>
+                <v-list-item-content>
+                <v-list-item-title>DATA</v-list-item-title>
                 </v-list-item-content>
             </v-list-item>
             <v-list-item link href="/nsfw/social">
