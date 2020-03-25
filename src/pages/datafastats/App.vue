@@ -6,7 +6,7 @@
         clipped
     >
         <v-list dense id="sfwNAV" v-if="!enableNSFWcontent">
-            <v-list-item class="v-list-item--active" link href="/">
+            <v-list-item link href="/">
                 <v-list-item-action>
                 <v-icon>mdi-home</v-icon>
                 </v-list-item-action>
@@ -14,7 +14,7 @@
                 <v-list-item-title>HOME</v-list-item-title>
                 </v-list-item-content>
             </v-list-item>
-            <v-list-item link href="/data">
+            <v-list-item class="v-list-item--active" link href="/data">
                 <v-list-item-action>
                 <v-icon>mdi-database</v-icon>
                 </v-list-item-action>
@@ -107,12 +107,13 @@
           align="center"
           justify="center"
         >
-          <v-col class="shrink">
-            <h1 style="font-size:4em;">I AM XENPHIRA</h1>
+          <v-col>
+            <h1 style="font-size:4em;">fa-stats</h1>
+            <img src="https://raw.githubusercontent.com/XENPHIRA/fa-stats/master/graph.png" width="80%" />
           </v-col>
         </v-row>
         <v-row v-if="enableNSFWcontent" align="center" justify="center">
-          <p>Spicy Edition</p>
+          <p></p>
         </v-row>
       </v-container>
     </v-content>

@@ -6,7 +6,7 @@
         clipped
     >
         <v-list dense id="sfwNAV" v-if="!enableNSFWcontent">
-            <v-list-item class="v-list-item--active" link href="/">
+            <v-list-item link href="/">
                 <v-list-item-action>
                 <v-icon>mdi-home</v-icon>
                 </v-list-item-action>
@@ -14,7 +14,7 @@
                 <v-list-item-title>HOME</v-list-item-title>
                 </v-list-item-content>
             </v-list-item>
-            <v-list-item link href="/data">
+            <v-list-item class="v-list-item--active" link href="/data">
                 <v-list-item-action>
                 <v-icon>mdi-database</v-icon>
                 </v-list-item-action>
@@ -48,7 +48,7 @@
             </v-list-item>
         </v-list>
         <v-list dense id="nsfwNAV" v-if="enableNSFWcontent">
-            <v-list-item class="v-list-item--active" link href="/nsfw/">
+            <v-list-item link href="/nsfw/">
                 <v-list-item-action>
                 <v-icon>mdi-home</v-icon>
                 </v-list-item-action>
@@ -56,7 +56,7 @@
                 <v-list-item-title>HOME</v-list-item-title>
                 </v-list-item-content>
             </v-list-item>
-            <v-list-item link href="/nsfw/data">
+            <v-list-item class="v-list-item--active" link href="/nsfw/data">
                 <v-list-item-action>
                 <v-icon>mdi-database</v-icon>
                 </v-list-item-action>
@@ -108,11 +108,14 @@
           justify="center"
         >
           <v-col class="shrink">
-            <h1 style="font-size:4em;">I AM XENPHIRA</h1>
+            <h1 style="font-size:4em;">Data Projects</h1>
+            <ul>
+              <li><a href="/fastats">fa-stats</a></li>
+            </ul>
           </v-col>
         </v-row>
         <v-row v-if="enableNSFWcontent" align="center" justify="center">
-          <p>Spicy Edition</p>
+          <p></p>
         </v-row>
       </v-container>
     </v-content>
