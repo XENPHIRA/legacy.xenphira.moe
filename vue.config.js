@@ -31,6 +31,18 @@ module.exports = {
       title: 'HOME',
       chunks: [ 'chunk-vendors', 'chunk-common', 'index' ]
     },
+    'data': {
+      entry: './src/pages/data/main.js',
+      template: 'public/index.html',
+      title: 'DATA',
+      chunks: [ 'chunk-vendors', 'chunk-common', 'data' ]
+    },
+    'fastats': {
+      entry: './src/pages/datafastats/main.js',
+      template: 'public/index.html',
+      title: 'fa-stats | DATA',
+      chunks: [ 'chunk-vendors', 'chunk-common', 'fastats' ]
+    },
     'music': {
       entry: './src/pages/music/main.js',
       template: 'public/index.html',
