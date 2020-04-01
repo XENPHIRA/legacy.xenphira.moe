@@ -2242,7 +2242,7 @@
         ],
         "detail_date_of_commission":"1583980560",
         "detail_date_of_completed_payment":"1583980920",
-        "latest_status":"Paid (1/2), Started",
+        "latest_status":"Done",
         "latest_status_link":"https://www.furaffinity.net/user/oselotti",
         "updates":[
             {
@@ -2252,10 +2252,22 @@
 			{
 				"timestamp":"1581994800",
 				"status":"commisison work streamed on picarto, saw progress"
+			},
+			{
+				"timestamp":"1585413180",
+				"status":"final low res received"
+			},
+			{
+				"timestamp":"1585414800",
+				"status":"second half payment completed"
+			},
+			{
+				"timestamp":"1585684620",
+				"status":"finished commission received"
 			}
         ],
-        "state_complete":false,
-        "state_css":"inprogress"
+        "state_complete":true,
+        "state_css":"done"
 	},
 	{
         "commission_id":"26820427",
