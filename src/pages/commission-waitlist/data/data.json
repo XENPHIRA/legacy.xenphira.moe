@@ -2367,8 +2367,8 @@
         ],
         "detail_date_of_commission":"1584148380",
         "detail_date_of_completed_payment":"1584149160",
-        "latest_status":"Paid, Not Started",
-        "latest_status_link":"https://www.furaffinity.net/user/MarbleSoda",
+        "latest_status":"Done",
+        "latest_status_link":"https://drive.google.com/file/d/11Oij0nOINe0HgJsIMlmx6ln4aT3VRLIA/view",
         "updates":[
             {
                 "timestamp":"1584148380",
@@ -2377,9 +2377,17 @@
 			{
 				"timestamp":"1584149160",
 				"status":"Paid invoice"
+			},
+			{
+				"timestamp":"1585948320",
+				"status":"Received sketch/lines and approved"
+			},
+			{
+				"timestamp":"1585959180",
+				"status":"Received completed commission"
 			}
         ],
-        "state_complete":false,
-        "state_css":"notstarted"
+        "state_complete":true,
+        "state_css":"done"
     }
 ]
